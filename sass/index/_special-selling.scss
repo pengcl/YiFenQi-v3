@@ -1,0 +1,120 @@
+.special-selling {
+    margin-top: 40px;
+    @at-root .goods-title {
+        margin-bottom: 6px;
+        .title, .timer {
+            line-height: 24px;
+            font-family: "microsoft yahei";
+        }
+        .title {
+            font-size: 22px;
+            color: #2f2f2f;
+        }
+        .timer {
+            font-size: 18px;
+            color: #d13432;
+            text-align: right;
+            .label {
+                @include inline-block;
+            }
+            .countdown {
+                @include inline-block;
+            }
+        }
+    }
+    .goods-list {
+        border-top: 1px solid $cf-border-red;
+        border-left: 1px solid $cf-border-gray;
+        overflow: hidden;
+        background: #fff;
+        .goods-item {
+            .goods-content {
+                padding-left: 220px;
+                padding-right: 25px;
+                min-height: 220px;
+                position: relative;
+                border-right: 1px solid $cf-border-gray;
+                border-bottom: 1px solid $cf-border-gray;
+                .imgbox {
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    img {
+                        display: block;
+                        width: 200px;
+                        height: 200px;
+                        @include transition-property(margin-left);
+                        @include transition-duration(0.4s);
+                        &:hover {
+                            margin-left: -5px;
+                        }
+                    }
+                }
+                .details {
+                    .title {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $cf-font-gray;
+                        margin-top: 30px;
+                    }
+                    .sub-title {
+                        font-size: 14px;
+                        color: $cf-font-red;
+                        margin-top: 8px;
+                    }
+                    .price {
+                        font-size: 14px;
+                        color: $cf-font-gray;
+                        margin-top: 40px;
+                        .special-price {
+                            margin-right: 20px;
+                            sub {
+                                color: $cf-font-red;
+                                font-weight: bold;
+                                bottom: 0;
+                            }
+                            em {
+                                color: $cf-font-red;
+                                font-size: 24px;
+                                font-style: normal;
+                            }
+                        }
+                        .old-price {
+                            text-decoration: line-through;
+                            em {
+                                font-style: normal;
+                            }
+                            sub {
+                                bottom: 0;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .buttom {
+                        width: 95%;
+                        .btn {
+                            width: 100%;
+                            display: block;
+                            line-height: 24px;
+                            font-size: 16px;
+                            font-family: "microsoft yahei";
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            text-align: center;
+                            text-decoration: none;
+                            font-weight: bold;
+                            background: #e93a38;
+                            color: #fff;
+                            @include border-radius(3px);
+                            cursor: pointer;
+                            &.disabled {
+                                background: #b2b2b2;
+                                cursor: not-allowed;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

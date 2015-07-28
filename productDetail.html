@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>翼分期5.0-Demo</title>
+    <link style="text/css" rel="stylesheet" href="css/base-min.css">
+    <link style="text/css" rel="stylesheet" href="css/grids-min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <link style="text/css" rel="stylesheet" href="css/global.css">
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousellite.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body class="product-detail">
+    <div class="header"></div>
+    <script>
+        $.get("include/header.html", function (data) {
+            $(".header").html(data);
+        });
+    </script>
+
+    <div class="main">
+        <div class="container">
+            <div class="pure-g">
+                <div class="product">
+                    <div class="product-img pure-u-9-24">
+                        <div class="img-wrap">
+                            <div class="img">
+                                <img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/l_i6-800-02.jpg">
+                            </div>
+                            <div class="product-image-list">
+                                <div id="product-image-list" class="scrollable">
+                                    <span id="scroller-prev" class="prev disable"></span>
+                                    <span id="scroller-next" class="next"></span>
+                                    <div class="scroller">
+                                        <ul class="img-list" id="imgList">
+                                            <li><img data-src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/l_i6-800-01.jpg" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/t_i6-800-01.jpg">
+                                            </li>
+                                            <li><img data-src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/l_i6-800-02.jpg" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/t_i6-800-02.jpg">
+                                            </li>
+                                            <li><img data-src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/l_i6-800-03.jpg" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/t_i6-800-03.jpg">
+                                            </li>
+                                            <li><img data-src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/l_i6-800-04.jpg" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/t_i6-800-04.jpg">
+                                            </li>
+                                            <li><img data-src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/l_i6-800-05.jpg" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/t_i6-800-05.jpg">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-txt pure-u-15-24">
+                        <div class="txt-content cf-font">
+                            <div class="title-box">
+                                <h1 class="title">电信合约机 iPhone6 全型号现货 4G手机TD-LTE/TD-SCDMA/GSM！</h1>
+                                <h2 class="sub-title">新号入网电信，享受超低价购机，与裸机版本无差别！还等什么，赶紧下手抢购神器吧！</h2>
+                            </div>
+                            <div class="price-box">
+                                <div class="price-buy">
+                                    <span class="label">购&nbsp;&nbsp;机&nbsp;&nbsp;价：</span>
+                                    <span class="price-num"><sub class="yuan">￥</sub><em>1088</em></span>
+                                    <div class="tooltip right">
+                                        <div class="tooltip-arrow"></div>
+                                        <div class="tooltip-inner">
+                                            预付30元，下单立减100元
+                                        </div>
+                                    </div>
+                                    <span class="price-market"><del>市场价：￥5288</del></span>
+                                </div>
+                                <div class="price-detail">
+                                    <label>所需信用额度：</label>
+                                    <span>5562（用信用额度预存话费，无需现金预存，真正做到只交话费就可超低价购机！）</span>
+                                </div>
+                            </div>
+                            <div class="choose-box">
+                                <div class="stats">
+                                    <dl class="i-color clearfix">
+                                        <dt>主机颜色：</dt>
+                                        <dd class="color-list">
+                                            <ul class="item-list">
+                                                <li class="color-list-item list-item active">
+                                                    <div class="img-box"><img src="images/gold.jpg">
+                                                    </div>
+                                                    <ins></ins>
+                                                </li>
+                                                <li class="color-list-item list-item">
+                                                    <div class="img-box"><img src="images/silvery.jpg">
+                                                    </div>
+                                                    <ins></ins>
+                                                </li>
+                                                <li class="color-list-item list-item">
+                                                    <div class="img-box"><img src="images/gray.jpg">
+                                                    </div>
+                                                    <ins></ins>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                        <dt>副机颜色：</dt>
+                                        <dd class="color-list">
+                                            <ul class="item-list">
+                                                <li class="color-list-item list-item">
+                                                    <div class="img-box"><img src="images/gold.jpg">
+                                                    </div>
+                                                    <ins></ins>
+                                                </li>
+                                                <li class="color-list-item list-item active">
+                                                    <div class="img-box"><img src="images/silvery.jpg">
+                                                    </div>
+                                                    <ins></ins>
+                                                </li>
+                                                <li class="color-list-item list-item">
+                                                    <div class="img-box"><img src="images/gray.jpg">
+                                                    </div>
+                                                    <ins></ins>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="i-contract clearfix">
+                                        <dt>合约类型：</dt>
+                                        <dd>
+                                            <ul class="contract item-list">
+                                                <li class="active"><span>36个月</span><ins></ins>
+                                                </li>
+                                                <li class="forbid"><span>24个月</span><ins></ins>
+                                                </li>
+                                                <li class="forbid"><span>12个月</span><ins></ins>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="i-package clearfix">
+                                        <dt>选择套餐：</dt>
+                                        <dd>
+                                            <ul class="package item-list">
+                                                <li class="active"><span>169元套餐</span><ins></ins>
+                                                </li>
+                                                <li><span>229元套餐</span><ins></ins>
+                                                </li>
+                                                <li><span>299元套餐</span><ins></ins>
+                                                </li>
+                                                <li><span>399元套餐</span><ins></ins>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="i-package-info clearfix">
+                                        <dt></dt>
+                                        <dd>
+                                            <div class="tooltip bottom package-2">
+                                                <div class="tooltip-arrow"></div>
+                                                <div class="tooltip-inner">
+                                                    <span class="nowrap">2G国内流量，700分钟国内通话 | <i class="fa fa-gift"></i> 一个套餐两人使用，赠送60G流量</span>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="payment">
+                                    <dl class="i-payment clearfix">
+                                        <dt>支付方式：</dt>
+                                        <dd>
+                                            <ul class="payment-method item-list">
+                                                <li class="active"><span>信用卡分期</span><ins></ins>
+                                                </li>
+                                                <li class="forbid"><span>无信用卡分期</span><ins></ins>
+                                                </li>
+                                                <li class="forbid"><span>全额支付</span><ins></ins>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="i-period clearfix">
+                                        <dt>分期期数：</dt>
+                                        <dd>
+                                            <ul class="period item-list">
+                                                <li class="active"><span>24期</span><ins></ins>
+                                                </li>
+                                                <li class="forbid"><span>12期</span><ins></ins>
+                                                </li>
+                                                <li class="forbid"><span>6期</span><ins></ins>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="i-status clearfix">
+                                        <dt>月供金额：</dt>
+                                        <dd>
+                                            <sub>￥</sub><em class="rmb">244.5</em><span>（本金：￥224.5 +手续费:￥20）</span><span class="qi">× 24</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="i-purchase clearfix">
+                                        <dt>预定优惠：</dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="purchase">预付定金30元即减100元</li>
+                                                <li>
+                                                    <input type="radio" name="purchase">暂不预付定金</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="buy">
+                                    <dl class="i-buy clearfix">
+                                        <dt></dt>
+                                        <dd>
+                                            <ul>
+                                                <li>
+                                                    <button class="pure-button pure-button-buy">立即购买</button>
+                                                </li>
+                                                <li>
+                                                    <button class="pure-button pure-button-primary">加入购物车</button>
+                                                </li>
+                                                <li class="question"><i class="fa fa-question"></i> 套餐及月供详情</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <div class="tips">温馨提示：本产品仅支持货到付全款</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w">
+                    <div class="recommend pure-u-1-5">
+                        <div class="sidebar">
+                            <div class="hd">
+                                <div class="title">相同套餐机型推介</div>
+                            </div>
+                            <div class="bd">
+                                <ul class="product-list">
+                                    <li class="product-item">
+                                        <div class="item-img">
+                                            <a href="/product-4-PROD201503190041.html" target="_blank">
+                                                <img width="150px" title="苹果 iPhone 6+iPhone 5s仅需单机价！" alt="苹果 iPhone 6+iPhone 5s仅需单机价！" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150330/m_jdwsrwdewsdwvdss4djmi7dixiw3.jpg" bigsrc="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150330/m_jdwsrwdewsdwvdss4djmi7dixiw3.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="/product-4-PROD201503190041.html" title="苹果 iPhone 6+iPhone 5s仅需单机价！" target="_blank">苹果 iPhone 6+iPhone 5s仅需单机价！</a>
+                                        </div>
+                                        <div class="item-amount">
+                                            <div class="item-amount-div">
+                                                <div class="payprice">
+                                                    月供:&nbsp;
+                                                    <span class="color-cf0">¥</span>
+                                                    <span class="paypricespan">393.8</span>
+                                                    <span class="color-cf0">x 24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-item">
+                                        <div class="item-img">
+                                            <a href="/product-7-PROD201503190047.html" target="_blank">
+                                                <img width="150px" title="三星 S5 G9009W 电信合约 省钱畅聊 双卡双待" alt="三星 S5 G9009W 电信合约 省钱畅聊 双卡双待" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/m_9009-01.jpg" bigsrc="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/m_9009-01.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="/product-7-PROD201503190047.html" title="三星 S5 G9009W 电信合约 省钱畅聊 双卡双待" target="_blank">三星 S5 G9009W 电信合约 省钱畅聊 双卡双待</a>
+                                        </div>
+                                        <div class="item-amount">
+                                            <div class="item-amount-div">
+                                                <div class="payprice">
+                                                    月供:&nbsp;
+                                                    <span class="color-cf0">¥</span>
+                                                    <span class="paypricespan">203.4</span>
+                                                    <span class="color-cf0">x 24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-item">
+                                        <div class="item-img">
+                                            <a href="/product-8-PROD201503190056.html" target="_blank">
+                                                <img width="150px" title="三星 Note4 众多路转粉 唯一匹敌苹果的智能机" alt="三星 Note4 众多路转粉 唯一匹敌苹果的智能机" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/m_note4-12.jpg" bigsrc="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/m_note4-12.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="/product-8-PROD201503190056.html" title="三星 Note4 众多路转粉 唯一匹敌苹果的智能机" target="_blank">三星 Note4 众多路转粉 唯一匹敌苹果的智能机</a>
+                                        </div>
+                                        <div class="item-amount">
+                                            <div class="item-amount-div">
+                                                <div class="payprice">
+                                                    月供:&nbsp;
+                                                    <span class="color-cf0">¥</span>
+                                                    <span class="paypricespan">247.2</span>
+                                                    <span class="color-cf0">x 24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-item">
+                                        <div class="item-img">
+                                            <a href="/product-2-PROD201503180022.html" target="_blank">
+                                                <img width="150px" title="苹果 iPhone6 64G大容量，看片更懂你" alt="苹果 iPhone6 64G大容量，看片更懂你" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/m_321_G_16.jpg" bigsrc="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/m_321_G_16.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="/product-2-PROD201503180022.html" title="苹果 iPhone6 64G大容量，看片更懂你" target="_blank">苹果 iPhone6 64G大容量，看片更懂你</a>
+                                        </div>
+                                        <div class="item-amount">
+                                            <div class="item-amount-div">
+                                                <div class="payprice">
+                                                    月供:&nbsp;
+                                                    <span class="color-cf0">¥</span>
+                                                    <span class="paypricespan">286.3</span>
+                                                    <span class="color-cf0">x 24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-item">
+                                        <div class="item-img">
+                                            <a href="/product-1-PROD201503180001.html" target="_blank">
+                                                <img width="150px" title="苹果 Apple iPhone6 Plus(64G) 电信合约版 现货疯抢！" alt="苹果 Apple iPhone6 Plus(64G) 电信合约版 现货疯抢！" src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/m_i6-400-02.jpg" bigsrc="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/m_i6-400-02.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="item-name">
+                                            <a href="/product-1-PROD201503180001.html" title="苹果 Apple iPhone6 Plus(64G) 电信合约版 现货疯抢！" target="_blank">苹果 Apple iPhone6 Plus(64G) 电信合约版 现货疯抢！</a>
+                                        </div>
+                                        <div class="item-amount">
+                                            <div class="item-amount-div">
+                                                <div class="payprice">
+                                                    月供:&nbsp;
+                                                    <span class="color-cf0">¥</span>
+                                                    <span class="paypricespan">319.6</span>
+                                                    <span class="color-cf0">x 24</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box pure-u-4-5">
+                        <div id="productDetailTabs" class="cf-tab">
+                            <div class="cf-tab-nav">
+                                <ul class="clearfix">
+                                    <li class="tab-nav active"><a href="javascript:;">商品详情</a>
+                                    </li>
+                                    <li class="tab-nav"><a href="javascript:;">规格参数</a>
+                                    </li>
+                                    <li class="tab-nav"><a href="javascript:;">套餐介绍</a>
+                                    </li>
+                                    <li class="tab-nav"><a href="javascript:;">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cf-tab-container">
+                                <ul class="cf-content">
+                                    <li role="tabpanel" style="display: block;" class="tab-content">
+                                        <!-- 商品详情广告-->
+                                        <p style="TEXT-ALIGN: center">
+                                            <img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150319/chanpinjieshao.png" style="width: 793px; height: 23px;">
+                                        </p>
+                                        <p style="TEXT-ALIGN: center">
+                                            &nbsp;</p>
+                                        <p style="TEXT-ALIGN: center">
+                                            <img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150318/01.jpg" style="WIDTH: 765px; HEIGHT: 478px"><img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150318/02.jpg" style="WIDTH: 747px; HEIGHT: 695px"><img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150318/03.jpg" style="WIDTH: 752px; HEIGHT: 333px"><img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150318/04.jpg" style="WIDTH: 750px; HEIGHT: 546px"><img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150318/05.jpg" style="WIDTH: 752px; HEIGHT: 423px">
+                                        </p>
+                                        <p style="TEXT-ALIGN: center">
+                                            &nbsp;</p>
+                                        <p style="TEXT-ALIGN: center">
+                                            <img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150318/shouhou.png" style="WIDTH: 793px; HEIGHT: 23px">
+                                        </p>
+                                        <p style="TEXT-ALIGN: center">
+                                            <img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/20150318/07.jpg" style="WIDTH: 820px; HEIGHT: 600px">
+                                        </p>
+                                    </li>
+                                    <li role="tabpanel" style="display: none;" class="tab-content">
+                                        <table width="100%" cellspacing="1" cellpadding="0" border="0" class="Ptable" style="line-height: 18px; margin: 10px 0px; font-family: Arial, Verdana, 宋体; empty-cells: show; color: rgb(102, 102, 102); background-color: rgb(204, 204, 204);">
+                                            <tbody>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        主体</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        品牌</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        苹果（Apple）</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        型号</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        iPhone 6 Plus (16G)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        上市年份</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        2014年</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        上市月份</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        9月</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        输入方式</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        触控</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        智能机</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        是</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        3G视频通话</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        操作系统</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        苹果（IOS）</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        操作系统版本</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        IOS</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        CPU品牌</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        苹果</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        CPU说明</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        配备 64 位架构的 A8 芯片,M8 运动协处理器</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        运营商标志或内容</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        无</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        网络</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        4G网络制式</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        移动4G(TD-LTE)/联通4G(FDD-LTE)/电信4G(FDD-LTE)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        3G网络制式</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        移动3G(TD-SCDMA)/联通3G(WCDMA)/电信3G（CDMA2000）</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        2G网络制式</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        移动2G/联通2G(GSM)/电信2G(CDMA)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        网络频率</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        FDD-LTE/TD-LTE/WCDMA/TD-SCDMA/CDMA2000/GSM/CDMA</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        存储</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        机身内存</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        16GB ROM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        储存卡类型</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        不支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        显示</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        屏幕尺寸</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        5.5英寸</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        触摸屏</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        Retina HD 高清显示屏</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        分辨率</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        1920 x 1080</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        感应器</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        GPS模块</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        重力感应</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        光线感应</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        距离感应</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        摄像功能</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        摄像头</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        800万像素</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        副摄像头</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        120万像素</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        闪光灯</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        True Tone 闪光灯</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        其他性能</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        五镜式镜头;混合红外线滤镜;背照式感光元件;蓝宝石水晶镜头表面;自动图像防抖动功能;自动 HDR 照片;优化的面部识别功能;曝光控制;全景模式 (高达 4300 万像素);连拍快照模式;轻点对焦;照片地理标记功能;计时模式</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        娱乐功能</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        音乐播放</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        AAC (8 至 320 Kbps)、Protected AAC (来自 iTunes Store)、HE-AAC、MP3 (8 至 320 Kbps)、MP3 VBR、Audible (格式 2、3、4，Audible Enhanced Audio、AAX 与 AAX+)、Apple Lossless、AIFF 与 WAV</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        视频播放</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        H.264 视频，最高可达 1080p，60 fps；High Profile level 4.2 和 AAC-LC 音频，最高可达 160 Kbps，48kHz；立体声音频，文件格式为 .m4v、.mp4 和 .mov；MPEG-4 视频，最高可达 2.5 Mbps，640 x 480 像素，30 fps；Simple Profile 和 AAC-LC 音频，每声道最高可达 160 Kbps，48kHz，立体声音频，文件格式为 .m4v, .mp4 和 .mov；Motion JPEG (M-JPEG)，最高可达 35 Mbps，1280 x 720 像素，30 fps；ulaw 音频和 PCM 立体声音频，文件格式为 .avi</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        传输功能</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        Wi-Fi</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        蓝牙</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        WIFI热点</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="tdTitle" colspan="2" style="text-align: center; padding: 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        其他</th>
+                                                </tr>
+                                                <tr>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        SIM卡尺寸</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        nano-sim卡</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        电池类型</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        锂电池</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        电池更换</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        不支持</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        理论通话时间（小时）</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        使用 3G 网络时长达 24 小时</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        理论待机时间（小时）</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        长达 16 天 (384 小时)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        数据线</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        Lightning</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        耳机接口</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        3.5mm</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        机身尺寸（mm）</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        158.1*77.8*7.1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdTitle" style="font-family: Arial, Verdana, sans-serif; text-align: right; padding: 2px 5px; width: 110px; background-color: rgb(245, 250, 254);">
+                                                        机身重量（g）</td>
+                                                    <td style="font-family: Arial, Verdana, sans-serif; padding: 2px 5px; background-color: rgb(255, 255, 255);">
+                                                        172</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li role="tabpanel" style="display: none;" class="tab-content">
+                                        <p>
+                                            <img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150410/gf3dg35deerdk3yd5v7hgertyj4u.jpg" style="width: 740px; height: 61px;">
+                                        </p>
+                                        <p>
+                                            <img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150410/fahbm0vb0hcwecmwnzsj9hcfmsma.jpg" style="width: 775px; height: 117px;"><img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150424/lrfe5fhblcrblrmelr4p53kk4ngh.jpg" style="width: 775px; height: 340px;"><img alt="" src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150410/ah28ugr822a839dl9cypu2dydalo.jpg" style="width: 787px; height: 133px;">
+                                        </p>
+                                    </li>
+                                    <li role="tabpanel" style="display: none" class="tab-content">
+                                        <div style="text-align:left">
+                                            <p>
+                                                <span style="color:#ff0000;">分期咨询：</span>
+                                            </p>
+                                            <p>
+                                                <strong>1</strong><strong>、这边分期付款所支持的银行有哪些？</strong>
+                                            </p>
+                                            <p>
+                                                答：亲，我们翼分期的战略合作银行包括：中行、工行、建行、招行、农行 、广发</p>
+                                            <p>
+                                                <strong>2</strong><strong>、额度不够/没有信用卡我还能选择哪种方式进行分期呢？</strong>
+                                            </p>
+                                            <p>
+                                                答：亲，额度不够/没信用卡可选择无信用卡分期哦（北银消费金融公司轻松付分期业务），提交准确有效的个人信息后，客户经理会与亲联系，预约上门办理，最快45分钟审核完成。</p>
+                                            <p>
+                                                &nbsp;</p>
+                                            <p>
+                                                <span style="color:#ff0000;">商品咨询：</span>
+                                            </p>
+                                            <p>
+                                                1、手机（合约机）</p>
+                                            <p>
+                                                <strong>1)</strong><strong>套餐详情的主副卡可共享是什么意思？</strong>
+                                            </p>
+                                            <p>
+                                                答：以99元/月套餐为例：两人平均每人每月不到50元即可共享1G流量和300分钟国内通话时长，超划算哦！一个套餐，两人共享（副卡10元/月功能费） 。</p>
+                                            <p>
+                                                <strong>2)</strong><strong>以后还可以更改合约套餐吗？</strong>
+                                            </p>
+                                            <p>
+                                                答：可以更改套餐档次，但只能选择更高档次的套餐。如：本次选择的是169元/月套餐，更改的套餐不低于169元/月即可。</p>
+                                            <p>
+                                                <strong>3)</strong><strong>是否需要办理新手机号？</strong>
+                                            </p>
+                                            <p>
+                                                答：购买合约机，新入网（新卡）电信用户可享手机终端补贴优惠，享受超低购机价；买裸机，沿用原有的号码即可。</p>
+                                            <p>
+                                                &nbsp;</p>
+                                            <p>
+                                                <span style="color:#ff0000;">售后咨询:</span>
+                                            </p>
+                                            <p>
+                                                <span style="color:#0000cd;">1、3C产品（手机、笔记本、平板等）</span>
+                                            </p>
+                                            <p>
+                                                <strong>1)</strong><strong>机子忽然不想要了，支持退货吗？</strong>
+                                            </p>
+                                            <p>
+                                                答：不好意思哦亲，产品签收后非质量问题不接受无理由退换货。</p>
+                                            <p>
+                                                <strong>2)</strong><strong>收到的手机存在质量问题怎么办？</strong>
+                                            </p>
+                                            <p>
+                                                答：自产品签收之日起，7天内若发现存在质量问题（非人为损坏）请凭发票到品牌检测点检测，若故障情况属实，由监测点为亲安排免费维修或换机事宜。</p>
+                                            <p>
+                                                &nbsp;</p>
+                                            <p>
+                                                <span style="color:#0000cd;">2、轻奢品（腕表、手链、包包等）</span>
+                                            </p>
+                                            <p>
+                                                服务承诺：对于本商城售出的商品，我们为您提供7天退货保障，考虑到本站奢侈品的特性，大多数商品只有一件，因此暂不支持换货。</p>
+                                            <p>
+                                                <strong>1. </strong><strong>退货说明：</strong>
+                                            </p>
+                                            <p>
+                                                1) 自商品售出之日（以商品实际签收日期为准）起7日内提出退货请求。</p>
+                                            <p>
+                                                2) 商品未经使用，原质原貌。</p>
+                                            <p>
+                                                3) 商品所有附属配件资料（如产品标识、包装、吊牌、三包卡、说明书、发票、赠品、配件、鉴定证书等）齐全。</p>
+                                            <p>
+                                                4) 腕表、钱包等标有“本商品无质量问题不支持退换货”的商品，如无质量问题，不支持退货。</p>
+                                            <p>
+                                                2. 商品如若出现以下情况，则视为无法退换货：</p>
+                                            <p>
+                                                1) 商品防损吊牌出现变形、破损、断裂等与出库原貌不同的。</p>
+                                            <p>
+                                                2) 商品产品标识、包装、吊牌、三包卡、说明书、发票、赠品、配件等缺失的。</p>
+                                            <p>
+                                                3) 商品任何因不当使用及未妥善保管而导致的质量问题的。</p>
+                                            <p>
+                                                4) 商品经使用、洗涤、遭污损、损坏等情形的。</p>
+                                            <p>
+                                                5) 未经授权的维修、误用、碰撞、疏忽、滥用、进液、事故、改动、不正确的安装所造成的商品质量问题，或撕毁、涂改标贴、机器序号、防伪标记。</p>
+                                            <p>
+                                                6) 因使用造成磨损的。</p>
+                                            <p>
+                                                7) 过保商品（超过三包保修期的商品）。</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixedtray-buy">
+                    <ul>
+                        <li class="help pure-u-1-3"></li>
+                        <li class="info pure-u-1-3"></li>
+                        <li class="buy pure-u-1-3">
+                            <div class="purchase-info">
+                                <div class="price">
+                                    购机价:<sub>￥</sub><span class="current-price">1,088</span>
+                                    <div class="tooltip top">
+                                        <div class="tooltip-arrow"></div>
+                                        <div class="tooltip-inner">
+                                            预付30元，下单立减100元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="financing">分期每月最低约 <sub>￥</sub>270</div>
+                                <div class="more">
+                                    <a href="javascript:;"><i class="fa fa-question"></i> 分期及月供详情 <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="purchase">
+                                <button class="pure-button button-continue">去结算</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+    <script>
+        $.get("include/footer.html", function (data) {
+            $(".footer").html(data);
+        });
+    </script>
+</body>
+
+</html>

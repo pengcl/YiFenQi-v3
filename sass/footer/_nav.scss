@@ -1,0 +1,34 @@
+.foot-nav {
+    margin-top: 30px;
+    .foot-nav-list {
+        border-top: 1px solid $cf-border-gray;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        .foot-nav-item {
+            & > ul {
+                & > li {
+                    color: #333;
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                    }
+                    line-height: 20px;
+                    &.title {
+                        font-size: 18px;
+                        font-weight: bold;
+                        margin-bottom: 7px;
+                    }
+                    &.title-weixin {
+                        text-align: right;
+                    }
+                    &.img-weixin {
+                        text-align: right;
+                    }
+                    &.tel-number {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

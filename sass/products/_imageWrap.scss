@@ -1,0 +1,42 @@
+.product-image-list {
+    height: 76px;
+    position: relative;
+    .scrollable {
+        .scroller {
+            margin-left: 50px;
+            position: relative;
+            margin-right: 50px;
+            overflow: hidden;
+            height: 54px;
+            #imgList {
+                margin-left: 5px;
+                width: 100%;
+                img {
+                    margin-left: 4px;
+                    margin-right: 4px;
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid #eee;
+                    cursor: pointer;
+                    &:hover {
+                        border-color: #cf0000;
+                    }
+                }
+            }
+        }
+        .prev,.next {
+            position: absolute;
+            width: 18px;
+            height: 54px;
+            z-index: 9;
+        }
+        .prev {
+            left: 20px;
+            background: url("../images/btn_arr_left_disabled.png");
+        }
+        .next {
+            right: 20px;
+            background: url("../images/btn_arr_right.png");
+        }
+    }
+}

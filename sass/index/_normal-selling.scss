@@ -1,0 +1,154 @@
+.normal-selling {
+    margin-top: 50px;
+    .goods-list {
+        border-top: 1px solid $cf-border-gray;
+        border-left: 1px solid $cf-border-gray;
+        overflow: hidden;
+        background: #fff;
+        .goods-item {
+            &.pure-u-1-2 {
+                .goods-content {
+                    .carousel {
+                        ul {
+                            li {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                    height: 360px;
+                                    display: block;
+                                }
+                            }
+                        }
+                        .btn-go {
+                            position: absolute;
+                            width: 100%;
+                            text-align: center;
+                            bottom: 15px;
+                            z-index: 2;
+                            left: 50%;
+                            margin-left: -45px;
+                            a {
+                                display: block;
+                                float: left;
+                                width: 40px;
+                                height: 6px;
+                                background: $cf-bg-gary;
+                                text-indent: 999px;
+                                overflow: hidden;
+                                margin-right: 2px;
+                                margin-left: 2px;
+                                &.highlight {
+                                    background: $cf-bg-blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .goods-content {
+                border-right: 1px solid $cf-border-gray;
+                border-bottom: 1px solid $cf-border-gray;
+                min-height: 360px;
+                .imgbox {
+                    padding-top: 15px;
+                    padding-bottom: 0;
+                    margin: 0 auto;
+                    width: 230px;
+                    img {
+                        display: block;
+                        width: 230px;
+                        height: 230px;
+                        @include transition-property(margin-left);
+                        @include transition-duration(0.4s);
+                        &:hover {
+                            margin-left: -5px;
+                        }
+                    }
+                }
+                .details {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                    .title {
+                        font-size: 14px;
+                        font-weight: bold;
+                        color: $cf-font-gray;
+                        margin-top: 10px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        line-height: 30px;
+                    }
+                    .sub-title {
+                        font-size: 14px;
+                        color: $cf-font-red;
+                        margin-top: 8px;
+                        display: none;
+                    }
+                    .price {
+                        font-size: 14px;
+                        color: $cf-font-gray;
+                        line-height: 30px;
+                        .special-price {
+                            float: left;
+                            sub {
+                                font-size: 12px;
+                                bottom: 0;
+                            }
+                            em {
+                                font-style: normal;
+                            }
+                        }
+                        .old-price {
+                            float: right;
+                            text-decoration: line-through;
+                            em {
+                                font-style: normal;
+                            }
+                            sub {
+                                bottom: 0;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .month-pay {
+                        font-size: 18px;
+                        line-height: 30px;
+                        color: #ce0000;
+                        em {
+                            font-style: normal;
+                        }
+                        sub {
+                            font-size: 18px;
+                            bottom: 0;
+                        }
+                    }
+                    .buttom {
+                        display: none;
+                        width: 95%;
+                        .btn {
+                            width: 100%;
+                            display: block;
+                            line-height: 24px;
+                            font-size: 16px;
+                            font-family: "微软雅黑";
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            text-align: center;
+                            text-decoration: none;
+                            font-weight: bold;
+                            background: #e93a38;
+                            color: #fff;
+                            @include border-radius(3px);
+                            cursor: pointer;
+                            &.disabled {
+                                background: #b2b2b2;
+                                cursor: not-allowed;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

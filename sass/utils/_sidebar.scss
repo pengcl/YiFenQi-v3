@@ -1,0 +1,36 @@
+.sidebar {
+    background: #fff;
+    border: 1px solid #ccc;
+    .hd {
+        height: 31px;
+        border-bottom: 1px solid #ccc;
+        line-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        .title {
+            font-size: 14px;
+            color: #666;
+        }
+    }
+    .bd {
+        padding: 15px;
+        .item-img {
+            img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin: 15px auto;
+            }
+        }
+        .item-name {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            a {
+                color: #666;
+                text-decoration: none;
+                font-size: 12px;
+            }
+        }
+    }
+}

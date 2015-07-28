@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=1120, user-scalable=no, minimal-ui" name="viewport">
+    <title>翼分期5.0-Demo</title>
+    <link style="text/css" rel="stylesheet" href="css/base-min.css">
+    <link style="text/css" rel="stylesheet" href="css/grids-min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <link style="text/css" rel="stylesheet" href="css/global.css">
+    <!--[if lte IE 8]>
+<link style="text/css" rel="stylesheet" href="css/ie8.css">
+<![endif]-->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousellite.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body class="index">
+    <!-- include header start -->
+    <div class="header"></div>
+    <script>
+        $.get("include/header.html", function (data) {
+            $(".header").html(data);
+        });
+    </script>
+    <!-- include header end -->
+
+    <div class="banner-top">
+        <div class="container">
+            <div class="slide">
+                <div class="carousel">
+                    <ul>
+                        <li><img data-color="#c7cffb" src="images/banner-1.jpg">
+                        </li>
+                        <li><img data-color="#f2f2f2" src="images/banner-2.jpg">
+                        </li>
+                    </ul>
+                    <div class="btn-pn">
+                        <a href="#" class="prev"></a>
+                        <a href="#" class="next"></a>
+                    </div>
+                    <div class="btn-go"><a class="go 1" href="#">1</a><a class="go 2" href="#">2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <script src="js/countdown.js" type="text/javascript"></script>
+        <div class="special-selling">
+            <div class="container">
+                <div class="goods-title pure-g">
+                    <div class="title pure-u-1-2">今日特卖</div>
+                    <div class="timer pure-u-1-2">
+                        <div class="label">离结束仅剩</div>
+                        <div id="countdown" class="countdown"></div>
+                    </div>
+                </div>
+                <ul class="goods-list box-shadow pure-g">
+                    <li class="goods-item pure-u-1-2">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150422/ah2lugrhhgdrylp89hsmyzy3p9r3.png">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">【现货】苹果 iPhone 6 4.7英寸 新品强势抢购</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price">
+                                    <span class="special-price">疯抢价：<sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">原购机价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-2">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150416/lrcejfhe3frgcj4tlrmekjwj4fgg.png">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">【现货】苹果 iPhone 6 4.7英寸 新品强势抢购</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price">
+                                    <span class="special-price">疯抢价：<sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">原购机价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="buttom"><a class="btn disabled" href="javascript:;">即将开始...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="normal-selling heyue">
+            <div class="container">
+                <div class="goods-title pure-g">
+                    <div class="title pure-u-1-2">1F 电信合约机</div>
+                    <div class="timer pure-u-1-2">【合约机小知识】进入专区 ></div>
+                </div>
+                <ul class="goods-list box-shadow pure-g">
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150326/lbftjcgb3frjrhjtlrqyjbnk5kym.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-2">
+                        <div class="goods-content">
+                            <div class="carousel">
+                                <ul class="clearfix">
+                                    <li><img src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150527/jc2sr2fdjwidd2es4ddm7pjdeesp.jpg">
+                                    </li>
+                                    <li><img src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150505/fahw909hmhgzxhfwnc0savedgacb.jpg">
+                                    </li>
+                                </ul>
+                                <div class="btn-go"><a class="go 1" href="#">1</a><a class="go 2" href="#">2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <script>
+                        $(".heyue .goods-content .carousel").jCarouselLite({
+                            start: 0,
+                            visible: 1,
+                            auto: 5000,
+                            speed: 1500,
+                            btnGo: [".heyue .btn-go .1", ".heyue .btn-go .2"],
+                            afterEnd: function (a) {
+
+                            }
+                        });
+                    </script>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150421/ahg8u2rc8gic8go8rcsp2y2pozxc.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150326/jdwxfwedm2ecw3rx3djer433fuf4.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150324/Mate7-800-01.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150521/lrfe5c5beebfygltlgrtpeceh4re.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/321_G_16.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner-mid">
+            <div class="container">
+                <div class="ad-content box-shadow">
+                    <img src="images/banner-mid.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="normal-selling luoji">
+            <div class="container">
+                <div class="goods-title pure-g">
+                    <div class="title pure-u-1-2">2F 裸机专区</div>
+                    <div class="timer pure-u-1-2">进入专区 ></div>
+                </div>
+                <ul class="goods-list box-shadow pure-g">
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/320_G_1420423346283.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-2">
+                        <div class="goods-content">
+                            <div class="carousel">
+                                <ul class="clearfix">
+                                    <li><img src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150527/gv3dgegv63jef4ndtrvn7ubbhhu7.jpg">
+                                    </li>
+                                    <li><img src="http://www.gd189fq.com:8899/fileserver/media/upload/content/20150527/lrctjfjbqc4fycfelgr3pw5wferw.jpg">
+                                    </li>
+                                </ul>
+                                <div class="btn-go"><a class="go 1" href="#">1</a><a class="go 2" href="#">2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <script>
+                        $(".luoji .goods-content .carousel").jCarouselLite({
+                            start: 0,
+                            visible: 1,
+                            auto: 5000,
+                            speed: 1500,
+                            btnGo: [".luoji .btn-go .1", ".luoji .btn-go .2"],
+                            afterEnd: function (a) {
+
+                            }
+                        });
+                    </script>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150421/gvedbe5vcdefnv5dtfkhfn4u5hg7.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/note4-11.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150330/jdwsr2eewxdw7xxs3djm773psdpc.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150323/321_G_16.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150330/jdwsfweewssfuexs3cjv7j7fxjjx.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="normal-selling">
+            <div class="container">
+                <div class="goods-title pure-g">
+                    <div class="title pure-u-1-2">3F 数码办公馆</div>
+                    <div class="timer pure-u-1-2">进入专区 ></div>
+                </div>
+                <ul class="goods-list box-shadow pure-g">
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/mini3new.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/air2-02.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150324/MD760-800-01.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="goods-item pure-u-1-4">
+                        <div class="goods-content">
+                            <div class="imgbox"><img src="http://www.gd189fq.com:8899/fileserver/media/upload/product/20150320/087.jpg">
+                            </div>
+                            <div class="details clearfix">
+                                <div class="title">三色现货【送翻盖皮套】iPhone5s热卖</div>
+                                <div class="sub-title">限时限量抢购，先到先得！比市场价便宜200！</div>
+                                <div class="price clearfix">
+                                    <span class="special-price"><sub>￥</sub><em>5068</em></span>
+                                    <span class="old-price">市场价：<sub>￥</sub><em>5068</em></span>
+                                </div>
+                                <div class="month-pay">月供<sub>￥</sub><em>5068</em>
+                                </div>
+                                <div class="buttom"><a class="btn" href="javascript:;">立即抢购 ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="comments">
+        <div class="container">
+            <div class="pure-g">
+                <ul class="comments-list">
+                    <li class="comments-item pure-u-1-2">
+                        <div class="comments-content">
+                            <div class="imgbox"><img src="images/comment-1.png">
+                            </div>
+                            <div class="txt">
+                                <div class="username">酷玩穷穷人</div>
+                                <div class="info">华为P7很华丽，大品牌的实力。绝对是正品，发货很快，流程很简单，客服态度超好，不错！</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="comments-item pure-u-1-2">
+                        <div class="comments-content">
+                            <div class="imgbox"><img src="images/comment-2.png">
+                            </div>
+                            <div class="txt">
+                                <div class="username">优秀d痴情小猪</div>
+                                <div class="info">今天收到货了，很好很给力，翼分期确实比其他分期好多了，特别还有优秀的人员团队，喜欢！！</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="comments-item pure-u-1-2">
+                        <div class="comments-content">
+                            <div class="imgbox"><img src="images/comment-3.png">
+                            </div>
+                            <div class="txt">
+                                <div class="username">小小の熊</div>
+                                <div class="info">还不错，重点在分期，我等屌丝也可以奢侈下，分期手续费跟其他的网站相比真心低啊，可以考虑下次继续分！</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="comments-item pure-u-1-2">
+                        <div class="comments-content">
+                            <div class="imgbox"><img src="images/comment-4.png">
+                            </div>
+                            <div class="txt">
+                                <div class="username">鸡蛋跟小母鸡</div>
+                                <div class="info">服务非常好，客服会打电话过来核对，分期手续办理起来还是很快的，没有信用卡的屌丝值得考虑~</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="banner-bottom">
+        <div class="container">
+            <div class="ad-content box-shadow">
+                <img src="images/banner-bottom.png">
+            </div>
+        </div>
+    </div>-->
+
+    <!-- include footer start -->
+    <div class="footer"></div>
+    <script>
+        $.get("include/footer.html", function (data) {
+            $(".footer").html(data);
+        });
+    </script>
+    <!-- include header end -->
+
+    <script type="application/javascript">
+        var myCountdown = new Countdown({
+            time: 86400,
+            width: 150,
+            blocks: "block",
+            height: 25,
+            hideLabels: true,
+            target: "countdown",
+            padding: 0.8, // Sets the text size to a percentage of the overall height. (I probably should have nemed this better.)
+            inline: true,
+            style: "boring",
+
+            labels: {
+                textScale: 0.8,
+                offset: 5
+            }, // &lt;- no comma on last item!
+
+            rangeHi: "hour",
+            labelText: {
+                ms: "MS",
+                second: "秒",
+                minute: "分",
+                hour: "时",
+                day: "DAYS",
+                month: "MONTHS",
+                year: "YEARS" // <- no comma on last item!
+            },
+        });
+    </script>
+</body>
+
+</html>

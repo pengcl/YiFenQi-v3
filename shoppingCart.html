@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>翼分期5.0-Demo</title>
+    <link style="text/css" rel="stylesheet" href="css/base-min.css">
+    <link style="text/css" rel="stylesheet" href="css/grids-min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <link style="text/css" rel="stylesheet" href="css/global.css">
+    <!--[if lte IE 8]>
+<link style="text/css" rel="stylesheet" href="css/ie8.css">
+<![endif]-->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousellite.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body class="checkout">
+    <div class="header"></div>
+    <script>
+        $.get("include/header.html", function (data) {
+            $(".header").html(data);
+        });
+    </script>
+
+    <div class="main">
+        <div class="container">
+            <div class="content-error" id="page-error">
+                <div id="page-error-text" class="text-alert"></div>
+            </div>
+
+            <div class="shopping-cart cart border-top-radius box" style="display:block">
+                <div class="inset-row">
+                    <h1 tabindex="-1" id="page-header" class="fst fwl pvs oln grid-9of10">您的购物车中的商品</h1>
+                </div>
+                <ul class="car-product-list">
+                    <li class="cart-product">
+                        <div class="product-container pure-g">
+                            <div class="product-image pure-u-1-4">
+                                <div class="image-wrap">
+                                    <img src="https://store.storeimages.cdn-apple.com/8368/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone6/silver/iphone6-silver-select-2014_GEO_CN?wid=110&hei=78&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1410265994752">
+                                </div>
+                            </div>
+                            <div class="product-info pure-u-3-4">
+                                <div class="product-head pure-g">
+                                    <div class="product-title pure-u-1-2">
+                                        <h2><a href="javascript:;">iPhone 6 plus 16GB - 银色 - 309套餐 - 主机</a></h2>
+                                    </div>
+                                    <div class="product-price pure-u-1-2">
+                                        <div class="inputs">
+                                            <div class="field-with-placeholder">
+                                                <input type="text" name="info-name">
+                                            </div>
+                                        </div><span><sub>￥</sub>11,350</span>
+                                    </div>
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-admin">
+                                        <button>删除</button>
+                                    </p>
+                                    <div class="product-num">编号: MJ2V2CH/A</div>
+                                    <ul>
+                                        <li><span>购机金额：</span><span><sub>￥</sub>5,788</span>
+                                        </li>
+                                        <li><span>预存话费：</span><span class="telephone-fare"><sub>￥</sub>5,562</span><span class="package">309套餐(4G国内流量，1500分钟国内通话)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cart-product">
+                        <div class="product-container pure-g">
+                            <div class="product-image pure-u-1-4">
+                                <div class="image-wrap">
+                                    <img src="https://store.storeimages.cdn-apple.com/8368/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone6/silver/iphone6-silver-select-2014_GEO_CN?wid=110&hei=78&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1410265994752">
+                                </div>
+                            </div>
+                            <div class="product-info pure-u-3-4">
+                                <div class="product-head pure-g">
+                                    <div class="product-title pure-u-1-2">
+                                        <h2>iPhone 6 16GB - 金色 - 309套餐 - 副机</h2>
+                                    </div>
+                                    <div class="product-price pure-u-1-2">
+                                        <div class="inputs">
+                                            <div class="field-with-placeholder">
+                                                <input type="text" name="info-name">
+                                            </div>
+                                        </div><span><sub>￥</sub>11,350</span>
+                                    </div>
+                                </div>
+                                <div class="product-body">
+                                    <p class="product-admin">
+                                        <button>删除</button>
+                                    </p>
+                                    <div class="product-num">编号: MJ2V2CH/A</div>
+                                    <ul>
+                                        <li><span>购机金额：</span><span><sub>￥</sub>0</span>
+                                        </li>
+                                        <li><span>预存话费：</span><span class="telephone-fare"><sub>￥</sub>0</span><span class="package">309套餐(4G国内流量，1500分钟国内通话)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="purchase-totals-box border-bottom-radius box">
+                <div class="purchase-content pure-g">
+                    <div class="promo-code pure-u-3-4"></div>
+                    <div class="purchase-totals pure-u-1-4">
+                        <div class="order-summary">
+                            <ul>
+                                <li class="total">购机总价：<sub>￥</sub>11,350</li>
+                                <li class="down-payment">首付应付：<sub>￥</sub>5,788</li>
+                                <li>分期每月最低约 RMB 317</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-footer" style="background:none;">
+                    <div class="order-footer-content pure-g" style="display:block;">
+                        <div class="purchase-info pure-u-3-4"></div>
+                        <div class="purchase-buy pure-u-1-4">
+                            <button title="立即下订单" id="place-order-button" class="pure-button button-continue" type="button">
+                                <span id="coherent_id_723"><span class="label" id="coherent_id_724">结账</span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cart-recommendations" class="box box-radius">
+                <div class="inset-row mbm">
+                    <h2 class="hrb">为你推荐</h1>
+                </div>
+                <ul class="cart-recommendations-list pure-g">
+                    <li class="recommendations-item pure-u-1-2">
+                        <div class="pure-g">
+                            <div class="pure-u-1-3"><img src="http://store.storeimages.cdn-apple.com/8455/as-images.apple.com/is/image/AppleInc/aos/published/images/M/KL/MKLG2/MKLG2?wid=140&hei=124&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1425905256831"></div>
+                            <div class="pure-u-2-3">
+                                <h3>Apple Watch 磁力充电线 (1 米)</h3>
+                                <div class="price">￥238</div>
+                                <button class="pure-button button-gray">添加到购物车</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations-item pure-u-1-2"><div class="pure-g">
+                            <div class="pure-u-1-3"><img src="http://store.storeimages.cdn-apple.com/8455/as-images.apple.com/is/image/AppleInc/aos/published/images/M/J4/MJ4G2/MJ4G2?wid=140&hei=124&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1425932520994"></div>
+                            <div class="pure-u-2-3">
+                                <h3>Apple Watch 磁力充电线 (1 米)</h3>
+                                <div class="price">￥238</div>
+                                <button class="pure-button button-gray">添加到购物车</button>
+                            </div>
+                        </div></li>
+                    <li class="recommendations-item pure-u-1-2"><div class="pure-g">
+                            <div class="pure-u-1-3"><img src="http://store.storeimages.cdn-apple.com/8455/as-images.apple.com/is/image/AppleInc/aos/published/images/M/J4/MJ4L2/MJ4L2?wid=140&hei=124&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1425932391517"></div>
+                            <div class="pure-u-2-3">
+                                <h3>Apple Watch 磁力充电线 (1 米)</h3>
+                                <div class="price">￥238</div>
+                                <button class="pure-button button-gray">添加到购物车</button>
+                            </div>
+                        </div></li>
+                    <li class="recommendations-item pure-u-1-2"><div class="pure-g">
+                            <div class="pure-u-1-3"><img src="http://store.storeimages.cdn-apple.com/8455/as-images.apple.com/is/image/AppleInc/aos/published/images/M/J4/MJ4E2/MJ4E2?wid=140&hei=124&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1425938895960"></div>
+                            <div class="pure-u-2-3">
+                                <h3>Apple Watch 磁力充电线 (1 米)</h3>
+                                <div class="price">￥238</div>
+                                <button class="pure-button button-gray">添加到购物车</button>
+                            </div>
+                        </div></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script>
+        $.get("include/footer.html", function (data) {
+            $(".footer").html(data);
+        });
+    </script>
+    
+</body>
+
+</html>

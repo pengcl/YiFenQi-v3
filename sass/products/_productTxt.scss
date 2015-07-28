@@ -1,0 +1,170 @@
+.product-txt {
+    .choose-box {
+        .stats {
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #999;
+        }
+        .payment {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #999;
+        }
+        .buy {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            .tips {
+                margin-top: 5px;
+                line-height: 24px;
+            }
+        }
+        dl {
+            margin: 0;
+            padding: 0;
+            padding-top: 12px;
+            &.i-purchase {
+                ul {
+                    li {
+                        border: 0;
+                        padding-left: 20px;
+                        input {
+                            position: absolute;
+                            top: 7px;
+                            left: 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &.i-buy {
+                dt {
+                    display: none;
+                }
+                dd {
+                    ul {
+                        li {
+                            border: 0;
+                            padding: 0;
+                            vertical-align: middle;
+                            &.question {
+                                line-height: 200%;
+                                padding: 0.5em 1em;
+                                font-size: 14px;
+                            }
+                            i {
+                                font-size: 14px;
+                            }
+                            button {
+                                font-size: 150%;
+                                @at-root .pure-button-buy {
+                                    background-color: #e93a38;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.i-package-info {
+                padding-top: 0;
+                .tooltip {
+                    position: relative;
+                    .tooltip-inner {
+                        line-height: 24px;
+                        i {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .package-0 {
+                    .tooltip-arrow {
+                        left: 45px;
+                    }
+                }
+                .package-1 {
+                    .tooltip-arrow {
+                        left: 135px;
+                    }
+                }
+                .package-2 {
+                    .tooltip-arrow {
+                        left: 225px;
+                    }
+                }
+                .package-3 {
+                    .tooltip-arrow {
+                        left: 315px;
+                    }
+                }
+                .package-4 {
+                    .tooltip-arrow {
+                        left: 405px;
+                    }
+                }
+            }
+            dt {
+                display: block;
+                float: left;
+                width: 80px;
+                margin: 0;
+                padding: 0;
+                line-height: 30px;
+                height: 30px;
+            }
+            dd {
+                float: left;
+                margin: 0;
+                padding: 0;
+                line-height: 30px;
+                sub {
+                    bottom: 0;
+                    font-size: 12px;
+                }
+                em {
+                    font-size: 20px;
+                    color: #e93a38;
+                    font-style: normal;
+                }
+                .qi {
+                    color: #e93a38;
+                }
+                ul {
+                    &.item-list {
+                        & > li.active {
+                            border: 1px solid #e93a38;
+                            ins {
+                                position: absolute;
+                                display: block;
+                                right: 0;
+                                bottom: 0;
+                                background: url("../images/selectbg.png") no-repeat;
+                                width: 16px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                    li {
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        float: left;
+                        border: 1px solid #ccc;
+                        cursor: pointer;
+                        line-height: 30px;
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        position: relative;
+                        &.color-list-item {
+                            padding: 0;
+                            .img-box {
+                                img {
+                                    display: block;
+                                    width: 38px;
+                                    height: 38px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

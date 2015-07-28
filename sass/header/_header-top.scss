@@ -1,0 +1,30 @@
+.header-top {
+    background: $cf-gray;
+    li {
+        display: block;
+        float: left;
+        &.spr {
+            a {
+                padding-left: 0;
+                padding-right: 0;
+                color: $cf-spr-gray;
+            }
+        }
+        a {
+            font-size: 12px;
+            line-height: 20px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: block;
+            text-decoration: none;
+            color: $cf-font-gray;
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+    .favorite {}
+    .userarea {}
+}

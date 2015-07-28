@@ -1,0 +1,1 @@
+{"connect":"SFTP","host":"list.pinor.net","port":"22","user":"root","remoteRoot":"/var/www/varylist4/lists/","privateKeyFile":""}

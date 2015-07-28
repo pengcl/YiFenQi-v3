@@ -1,0 +1,16 @@
+.foot-certification {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: #424242;
+    text-align: center;
+    ul {
+        li {
+            @include inline-block;
+            margin-left: 8px;
+            margin-right: 8px;
+            img {
+                display: block;
+            }
+        }
+    }
+}

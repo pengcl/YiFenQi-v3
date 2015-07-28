@@ -1,0 +1,75 @@
+.fixedtray-buy {
+    background: rgba(248, 248, 248, 0.95) none repeat scroll 0 0;
+    border-top: 1px solid #e8e8e8;
+    bottom: 0;
+    display: block;
+    left: 0;
+    min-width: 980px;
+    padding: 12px 0 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    ul {
+        width: 1100px;
+        display: block;
+        margin: 0 auto;
+        li {
+            &.buy {
+                text-align: right;
+                .purchase-info {
+                    @include inline-block;
+                    vertical-align: middle;
+                    .price {
+                        font-size: 14px;
+                        position: relative;
+                        .current-price {
+                            line-height: 1.2em;
+                            font-size: 24px;
+                            font-weight: lighter;
+                            letter-spacing: -1px;
+                            color: #e93a38;
+                        }
+                        sub {
+                            bottom: 0;
+                        }
+                        .tooltip {
+                            top: -30px;
+                            right: -50px;
+                            position: absolute;
+                            .tooltip-inner {
+                                white-space: nowrap;
+                                background: #e93a38;
+                            }
+                            .tooltip-arrow {
+                                border-top-color: #e93a38;
+                            }
+                        }
+                    }
+                    .financing {
+                        display: block;
+                        sub {
+                            bottom: 0;
+                        }
+                    }
+                    .more {
+                        a {
+                            text-decoration: none;
+                            i {
+                                font-size: 14px;
+                                &.fa-question {
+                                    color: #666;
+                                    font-weight: lighter;
+                                }
+                            }
+                        }
+                    }
+                }
+                .purchase {
+                    @include inline-block;
+                    vertical-align: middle;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.cf-panel {
+    border: 1px solid #ccc;
+    .cf-panel-bd {}
+    .cf-panel-ft {
+        background: #fafafa;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: right;
+    }
+}
+
+.mask {
+    background: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    z-index: 99998 !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    .cf-panel {
+        border: 1px solid #e1e1e1;
+        width: 830px;
+        min-width: 618px;
+        position: fixed;
+        left: 50%;
+        margin-left: -415px;
+        top: 15%;
+        @include box-shadow(0 0 25px rgba(0, 0, 0, 0.6));
+        @include border-radius(4px);
+        .hd {
+            padding-top: 17px;
+            padding-right: 0;
+            padding-bottom: 5px;
+            padding-left: 21px;
+            background: #d9d9d9 url("../images/storelocator_backgrounds.png") repeat-x scroll 0 0 / 10px 200px;
+            min-height: 40px;
+            .title {
+                font-size: 20px;
+            }
+        }
+        .bd {
+            background: #fff;
+            padding-left: 21px;
+            padding-right: 21px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .ft {
+            min-height: 41px;
+            background: #f2f2f2;
+            border-top: 1px solid #e6e6e6;
+            padding-left: 21px;
+            padding-right: 21px;
+            text-align: right;
+            button {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                font-size: 12px;
+                line-height: normal;
+                &.button-blue {
+                    margin-left: 12px;
+                }
+                &.button-gray {
+                    color: #0085cf;
+                }
+            }
+        }
+    }
+}

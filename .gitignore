@@ -1,0 +1,5 @@
+﻿*.ftpsync_settings
+*.scssc
+*.DS_Store
+*.psd
+PSD-Sorce/*

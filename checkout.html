@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>翼分期5.0-Demo</title>
+    <link style="text/css" rel="stylesheet" href="css/base-min.css">
+    <link style="text/css" rel="stylesheet" href="css/grids-min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link style="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css">
+    <link style="text/css" rel="stylesheet" href="css/global.css">
+    <!--[if lte IE 8]>
+<link style="text/css" rel="stylesheet" href="css/ie8.css">
+<![endif]-->
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jcarousellite.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body class="checkout">
+    <div class="header"></div>
+    <script>
+        $.get("include/header.html", function (data) {
+            $(".header").html(data);
+        });
+    </script>
+
+    <div class="main">
+        <div class="container">
+            <div class="content-error" id="page-error">
+                <div id="page-error-text" class="text-alert"></div>
+            </div>
+            <div class="checkout-wrapper">
+                <div class="checkout-step">
+                    <ol>
+                        <li>
+                            <div id="delivery-box" class="box frist">
+                                <h2 class="step-header"><span class="step step-1"></span><span class="step-title">商品清单</span></h2>
+                                <div class="cart step-content" style="display:block">
+                                    <ul class="car-product-list">
+                                        <li class="cart-product">
+                                            <div class="product-container pure-g">
+                                                <div class="product-image pure-u-1-4">
+                                                    <div class="image-wrap">
+                                                        <img src="https://store.storeimages.cdn-apple.com/8368/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone6/silver/iphone6-silver-select-2014_GEO_CN?wid=110&hei=78&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1410265994752">
+                                                    </div>
+                                                </div>
+                                                <div class="product-info pure-u-3-4">
+                                                    <div class="product-head pure-g">
+                                                        <div class="product-title pure-u-1-2">
+                                                            <h3>iPhone 6 plus 16GB - 银色 - 309套餐 - 主机</h3>
+                                                        </div>
+                                                        <div class="product-price pure-u-1-2"><span>合计价格：</span><span><sub>￥</sub>11,350</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-body">
+                                                        <ul>
+                                                            <li><span>购机金额：</span><span><sub>￥</sub>5,788</span>
+                                                            </li>
+                                                            <li><span>预存话费：</span><span class="telephone-fare"><sub>￥</sub>5,562</span><span class="package">309套餐(4G国内流量，1500分钟国内通话)</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="cart-product">
+                                            <div class="product-container pure-g">
+                                                <div class="product-image pure-u-1-4">
+                                                    <div class="image-wrap">
+                                                        <img src="https://store.storeimages.cdn-apple.com/8368/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone6/silver/iphone6-silver-select-2014_GEO_CN?wid=110&hei=78&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,1.5,0,0&iccEmbed=0&layer=comp&.v=1410265994752">
+                                                    </div>
+                                                </div>
+                                                <div class="product-info pure-u-3-4">
+                                                    <div class="product-head pure-g">
+                                                        <div class="product-title pure-u-1-2">
+                                                            <h3>iPhone 6 16GB - 金色 - 309套餐 - 副机</h3>
+                                                        </div>
+                                                        <div class="product-price pure-u-1-2"><span>合计价格：</span><span><sub>￥</sub>0</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-body">
+                                                        <ul>
+                                                            <li><span>购机金额：</span><span><sub>￥</sub>0</span>
+                                                            </li>
+                                                            <li><span>预存话费：</span><span class="telephone-fare"><sub>￥</sub>0</span><span class="package">309套餐(4G国内流量，1500分钟国内通话)</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="step-continue">
+                                    <div class="continue-content pure-g">
+                                        <div class="pure-u-2-3"></div>
+                                        <div class="continue-go pure-u-1-3">
+                                            <button class="pure-button button-continue">继续</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="information-box" class="box">
+                                <h2 class="step-header greyed-out"><span class="step step-2"></span><span class="step-title">入网信息</span></h2>
+                                <button class="shipping-edit-button pure-button" type="button">编辑</button>
+                                <div class="step-content">
+                                    <div class="information-form step-mode pure-g">
+                                        <fieldset class="pure-u-1-2">
+                                            <legend>入网信息</legend>
+                                            <div class="step-summary pure-g">
+                                                <h3 class="pure-u-1-3">入网信息</h3>
+                                                <div class="step-summary-val pure-u-2-3">
+                                                    <input name="passportName" value="" readonly>
+                                                    <input name="passportNumber" value="" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="fieldset-content">
+                                                <div class="inputs">
+                                                    <div class="field-with-placeholder">
+                                                        <label class="placeholder">机主姓名：</label>
+                                                        <input type="text" name="info-name">
+                                                    </div>
+                                                </div>
+                                                <div class="inputs">
+                                                    <div class="field-with-placeholder">
+                                                        <label class="placeholder">身份证号：</label>
+                                                        <input type="text" name="info-name">
+                                                    </div>
+                                                </div>
+                                                <div class="inputs">
+                                                    <div class="field-with-placeholder">
+                                                        <button class="pure-button"><span>上传证件照</span>
+                                                        </button>
+                                                        <button class="pure-button"><span>稍后上传</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="tips pure-u-1-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-continue">
+                                    <div class="continue-content pure-g">
+                                        <div class="pure-u-2-3"></div>
+                                        <div class="continue-go pure-u-1-3">
+                                            <button class="pure-button button-continue">继续</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="address-box" class="box">
+                                <h2 class="step-header greyed-out"><span class="step step-3"></span><span class="step-title">送货地址</span></h2>
+                                <button class="shipping-edit-button pure-button" type="button">编辑</button>
+                                <div class="step-content">
+                                    <div class="information-form step-mode pure-g">
+                                        <fieldset class="pure-u-1-2">
+                                            <legend>收货人信息</legend>
+                                            <div class="step-summary pure-g">
+                                                <h3 class="pure-u-1-3">送货地址</h3>
+                                                <div class="step-summary-val pure-u-2-3">
+                                                    <input name="addressName" value="" readonly>
+                                                    <input name="addressAddress" value="" readonly>
+                                                    <input name="phoneNumber" value="" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="fieldset-content">
+                                                <div class="inputs">
+                                                    <div class="field-with-placeholder">
+                                                        <label class="placeholder">真实姓名：</label>
+                                                        <input type="text" name="info-name">
+                                                    </div>
+                                                </div>
+                                                <div class="inputs">
+                                                    <div class="field-with-placeholder">
+                                                        <label class="placeholder">详细地址：广东，</label>
+                                                        <input class="info-address" type="text" name="info-address">
+                                                    </div>
+                                                </div>
+                                                <div class="inputs">
+                                                    <div class="field-with-placeholder">
+                                                        <label class="placeholder">手机号码：</label>
+                                                        <input class="info-name-phone" type="text" name="info-name-phone">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--<legend>发货通知</legend>
+                                                <div class="fieldset-content">
+                                                    <div class="inputs">
+                                                        <div class="tips">
+                                                            <p>请在下面输入手机号码，以接收短信了解最新发货状态。此处号码仅限于接收短信。</p>
+                                                            <p><a class="transform-phone-num" href="javascript:;">与收货地址的电话相同</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="field-with-placeholder">
+                                                            <label class="placeholder">短信通知：</label>
+                                                            <input class="info-name-phone-msg" type="text" name="info-name-phone-msg">
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+                                        </fieldset>
+                                        <div class="tips pure-u-1-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-continue">
+                                    <div class="continue-content pure-g">
+                                        <div class="continue-info pure-u-2-3">
+                                            <div class="save-address">
+                                                <input type="checkbox" checked>保存为我的默认收货地址</div>
+                                        </div>
+                                        <div class="continue-go pure-u-1-3">
+                                            <button class="pure-button button-continue">继续</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="shipping-box" class="box">
+                                <h2 class="step-header greyed-out"><span class="step step-4"></span><span class="step-title">配送方式</span></h2>
+                                <button class="shipping-edit-button pure-button" type="button">编辑</button>
+                                <div class="step-content">
+                                    <div class="information-form step-mode pure-g">
+                                        <fieldset class="pure-u-1-2">
+                                            <legend>配送公司</legend>
+                                            <div class="step-summary pure-g">
+                                                <h3 class="pure-u-1-3">配送方式</h3>
+                                                <div class="step-summary-val pure-u-2-3">
+                                                    <input value="" name="shippingCompany" readonly>
+                                                    <input value="" name="shippingDay" readonly>
+                                                    <input value="" name="shippingTime" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="fieldset-content">
+                                                <ul class="option-list">
+                                                    <li>
+                                                        <input type="radio" value="翼分期配送（免邮费，广州市内最快两小时到达）" name="info-shipping-company">翼分期配送<span class="tips">（免邮费，广州市内最快两小时到达）</span>
+                                                    </li>
+                                                </ul>
+                                                <legend>配送日期</legend>
+                                                <ul class="option-list">
+                                                    <li>
+                                                        <input type="radio" name="info-shipping-day">不限</li>
+                                                    <li>
+                                                        <input type="radio" name="info-shipping-day">仅工作日</li>
+                                                    <li>
+                                                        <input type="radio" name="info-shipping-day">仅休息日</li>
+                                                </ul>
+                                                <legend>配送时间</legend>
+                                                <ul class="option-list">
+                                                    <li>
+                                                        <input type="radio" name="info-shipping-time">不限</li>
+                                                    <li>
+                                                        <input type="radio" name="info-shipping-time">上午</li>
+                                                    <li>
+                                                        <input type="radio" name="info-shipping-time">中午</li>
+                                                    <li>
+                                                        <input type="radio" name="info-shipping-time">下午</li>
+                                                </ul>
+                                            </div>
+                                        </fieldset>
+                                        <div class="tips pure-u-1-2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-continue">
+                                    <div class="continue-content pure-g">
+                                        <div class="continue-info pure-u-2-3">
+                                        </div>
+                                        <div class="continue-go pure-u-1-3">
+                                            <button class="pure-button button-continue">继续</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="invoice-box" class="box">
+                                <h2 class="step-header greyed-out"><span class="step step-5"></span><span class="step-title">发票信息</span></h2>
+                                <button class="shipping-edit-button pure-button" type="button">编辑</button>
+                                <div class="step-content">
+                                    <div class="information-form step-mode pure-g">
+                                        <fieldset class="pure-u-1-2">
+                                            <legend>发票类型</legend>
+                                            <div class="step-summary pure-g">
+                                                <h3 class="pure-u-1-3">发票类型</h3>
+                                                <div class="step-summary-val pure-u-2-3">
+                                                    <input value="" name="invoiceType" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="fieldset-content">
+                                                <ul class="option-list">
+                                                    <li>
+                                                        <input type="radio">不开发票</li>
+                                                    <li>
+                                                        <input type="radio">个人发票</li>
+                                                    <li>
+                                                        <input type="radio">公司发票</li>
+                                                </ul>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="pure-u-1-2">
+                                            <legend>发票类型</legend>
+                                            <div class="fieldset-content">
+                                                <div class="inputs">
+                                                    <div class="field-with-placeholder">
+                                                        <label class="placeholder">详细地址：广东，</label>
+                                                        <input class="info-address" type="text" name="info-address">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="step-continue">
+                                    <div class="continue-content pure-g">
+                                        <div class="continue-info pure-u-2-3">
+                                        </div>
+                                        <div class="continue-go pure-u-1-3">
+                                            <button class="pure-button button-continue">继续</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="payment-box" class="box">
+                                <h2 class="step-header greyed-out"><span class="step step-6"></span><span class="step-title">支付方式</span></h2>
+                                <button class="shipping-edit-button pure-button" type="button">编辑</button>
+                                <div class="step-content">
+                                    <div id="installment" class="information-form step-mode payment-step pure-g">
+                                        <fieldset class="pure-u-1">
+                                            <legend class="payment-legend">分期付款</legend>
+                                            <div class="step-summary">付款方式</div>
+                                            <div class="fieldset-content">
+                                                <div class="option-list">
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-CMB.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-CCB.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-ICBC.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-BOF.jpg">
+                                                    </span>
+                                                    <span class="card-option no-card">
+                                                        <input type="radio" name="payment-bank-option"><a href="javascript:;">无卡分期</a>
+                                                    </span>
+                                                </div>
+                                                <div class="option-content">
+                                                    <div class="tooltip bottom tooltip-payment">
+                                                        <div class="tooltip-arrow"></div>
+                                                        <div class="tooltip-inner">
+                                                            <ul class="option-list">
+                                                                <li class="card-option">
+                                                                    <input type="radio" name="payment-bank-option-paytype">线上分期</li>
+                                                                <li class="card-option">
+                                                                    <input type="radio" name="payment-bank-option-paytype">线下分期</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div id="full-payout" class="information-form step-mode payment-step pure-g">
+                                        <fieldset class="pure-u-1">
+                                            <legend class="payment-legend">全额支付</legend>
+                                            <div class="step-summary"></div>
+                                            <div class="fieldset-content">
+                                                <div class="option-list">
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-CMB.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-CCB.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-ICBC.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-BOF.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-ABC.jpg">
+                                                    </span>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-GDB.jpg">
+                                                    </span>
+                                                    <div id="want-1-space" class="want-space"></div>
+                                                    <span class="card-option has-card">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-BOC.jpg">
+                                                    </span>
+                                                    <div id="want-2-space" class="want-space"></div>
+                                                </div>
+                                                <div class="option-content">
+                                                    <div class="tooltip bottom tooltip-payment">
+                                                        <div class="tooltip-arrow"></div>
+                                                        <div class="tooltip-inner">
+                                                            <ul class="option-list">
+                                                                <li class="card-option">
+                                                                    <input type="radio" name="payment-bank-option-paytype">货到付款</li>
+                                                                <li class="card-option">
+                                                                    <input type="radio" name="payment-bank-option-paytype">线上支付</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="more-option"><a href="javascript:;">查看更多银行</a>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <!--<div id="cash-on-delivery" class="information-form step-mode payment-step pure-g">
+                                            <fieldset class="pure-u-1">
+                                                <legend>付款方式</legend>
+                                                <div class="step-summary hidden"></div>
+                                                <div class="fieldset-content option-list">
+                                                    <ul class="card-option-list">
+                                                        <li class="card-option">
+                                                            <input type="radio" name="payment-method-option">货到付款（现金支付）
+                                                        </li>
+                                                        <li class="card-option">
+                                                            <input type="radio" name="payment-method-option">货到付款（pos机支付）
+                                                        </li>
+                                                        <li class="card-option">
+                                                            <input type="radio" name="payment-method-option">线上支付
+                                                        </li>
+                                                    </ul>
+                                                    <div class="installment-content">
+                                                        <span class="beak"></span>
+                                                        <div class="installment"></div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>-->
+                                    <div id="other-pay" class="information-form step-mode payment-step pure-g">
+                                        <fieldset class="pure-u-1">
+                                            <legend>其他付款类型</legend>
+                                            <div class="step-summary"></div>
+                                            <div class="fieldset-content option-list">
+                                                <ul class="card-option-list">
+                                                    <li class="card-option">
+                                                        <input type="radio" name="payment-bank-option"><img src="images/bank/checkout-bank-Alipay.jpg">
+                                                    </li>
+                                                    <li class="card-option">
+                                                        <input type="radio" name="payment-bank-option">货到付款（现金）
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="step-continue">
+                                    <div class="continue-content pure-g">
+                                        <div class="continue-info pure-u-2-3">
+                                        </div>
+                                        <div class="continue-go pure-u-1-3">
+                                            <button class="pure-button button-continue">继续</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="purchase-totals-box box">
+                        <div class="purchase-content pure-g">
+                        <div class="promo-code pure-u-3-4"></div>
+                        <div class="purchase-totals pure-u-1-4">
+                            <div class="order-summary">
+                                <ul>
+                                    <li class="total">购机总价：<sub>￥</sub>11,350</li>
+                                    <li class="down-payment">首付应付：<sub>￥</sub>5,788</li>
+                                    <li>分期每月最低约 RMB 317</li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="order-footer">
+                            <div class="order-footer-content pure-g" style="display:block;">
+                                <div class="purchase-info pure-u-3-4"></div>
+                                <div class="purchase-buy pure-u-1-4">
+                                    <button title="立即下订单" id="place-order-button" class="pure-button button-blue" type="button">
+                                        <span id="coherent_id_723"><span class="label" id="coherent_id_724">提交订单</span></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div>
+    <script>
+        $.get("include/footer.html", function (data) {
+            $(".footer").html(data);
+        });
+    </script>
+    <div class="mask" id="idCardDiv">
+        <div class="cf-panel">
+            <div class="hd">
+                <div class="title">请上传身份证照片</div>
+            </div>
+            <div class="bd clearfix">
+                <div class="title">请上传入网申请人清晰的身份证原件,正、反照和手持身份证片各一张，每张少于5M；（支持 jpg,png,bmp,jpeg)</div>
+                <div class="upload-content">
+                    <div class="upimg">
+                        <div class="dropzone" id="idCartFrontImgForm" target="_self">
+                        </div>
+                    </div>
+                    <div class="upimg">
+                        <div class="dropzone" id="idCardBgImgForm" target="_self">
+                        </div>
+                    </div>
+                    <div class="upimg">
+                        <div class="dropzone" id="idCartImgForm" target="_self">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft">
+                <button class="pure-button button-gray mask-button-cancel" type="button">取消</button>
+                <button class="pure-button button-blue mask-button-ok" type="button"><span>确定</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
