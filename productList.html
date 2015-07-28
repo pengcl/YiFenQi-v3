@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta content="width=1120, user-scalable=no, minimal-ui" name="viewport">
@@ -16,7 +17,44 @@
     <script src="js/jquery.jcarousellite.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </head>
-<body class="product-list">
 
+<body class="product-list">
+    <!-- include header start -->
+    <div class="header"></div>
+    <script>
+        $.get("include/header.html", function (data) {
+            $(".header").html(data);
+        });
+    </script>
+    <!-- include header end -->
+    <div class="main">
+        <div class="container">
+            <div class="content-error" id="page-error">
+                <div id="page-error-text" class="text-alert"></div>
+            </div>
+            <div class="position pdv"><a href="/" class="home">首页</a>><a href="javascript:;">电信合约机</a>><a href="javascript:;">合约单机</a>
+            </div>
+            <div class="finder box box-radius pdb">
+                <div class="classify bdb pdm">
+                    <label>分类：</label><span class="curr">全部</span><span>合约双机</span><span>合约单机</span>
+                </div>
+                <div class="classify bdb pdm">
+                    <label>品牌：</label><span class="curr">全部</span><span>APPLE</span><span>三星</span><span>HTC</span><span>华为</span><span>小米</span>
+                </div>
+                <div class="classify pdm">
+                    <label>价格：</label><span class="curr">全部</span><span>0元购</span><span>99-1999</span><span>2000-4999</span><span>5000-6999</span><span>7000以上</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- include footer start -->
+    <div class="footer"></div>
+    <script>
+        $.get("include/footer.html", function (data) {
+            $(".footer").html(data);
+        });
+    </script>
+    <!-- include header end -->
 </body>
+
 </html>

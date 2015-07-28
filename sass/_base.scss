@@ -64,10 +64,24 @@ body.product-detail {
 }
 a {
     text-decoration: none;
+    color: #666;
 }
 .border-top-radius {
     @include border-top-radius(4px);
 }
 .border-bottom-radius {
     @include border-bottom-radius(4px);
+}
+.pdm {
+    padding: 10px;
+}
+.bdb {
+    border-bottom: 1px solid #e6e6e6;
+}
+.pdb {
+    padding-bottom: 10px;
+}
+.pdv {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
