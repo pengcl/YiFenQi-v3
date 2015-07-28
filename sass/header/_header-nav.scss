@@ -1,3 +1,8 @@
+.index {
+    .menu-list {
+        display: block;
+    }
+}
 .header-nav {
     border-bottom: 1px solid #e93a38;
     .menu {
@@ -40,6 +45,7 @@
             overflow: hidden;
             position: absolute;
             width: 100%;
+            display: none;
             ul {
                 li {
                     height: 69px;
