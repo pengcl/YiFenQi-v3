@@ -8,6 +8,7 @@
         }
     }
 }
+
 .finder {
     .classify {
         label {
@@ -23,9 +24,102 @@
             padding-left: 5px;
             padding-right: 5px;
             &.curr {
-                background: #cf0000;
+                background: $cf-font-red;
                 color: #fff;
             }
+        }
+    }
+}
+
+.pro-list-oper {
+    &.box {
+        min-height: auto;
+    }
+    .page {
+        color: gray;
+        text-align: right;
+        .fa {
+            font-size: 14px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        span {
+            margin-right: 5px;
+            margin-left: 5px;
+            em {
+                color: $cf-font-red;
+                font-style: normal;
+            }
+        }
+    }
+}
+
+.product-list {
+    .pro-item {
+        .item-content {
+            padding: 10px;
+            .item-pic {
+                margin-bottom: 10px;
+                height: 240px;
+                img {
+                    width: 235px;
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 5px;
+                    @include transition-property(margin-left);
+                    @include transition-duration(0.4s);
+                    &:hover {
+                        margin-left: -5px;
+                    }
+                }
+            }
+            .brand_tit {
+                line-height: 16px;
+                color: gray;
+            }
+            .pro-title {
+                padding-top: 2px;
+                line-height: 16px;
+                max-height: 32px;
+                overflow: hidden;
+            }
+            .pro-data {
+                span.deep_red {
+                    color: $cf-font-red;
+                    em {
+                        font-size: 16px;
+                        line-height: 30px;
+                        font-weight: 700;
+                        margin-right: 7px;
+                    }
+                }
+                del {
+                    margin-left: 5px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+.bottom_page {
+    text-align: center;
+    a {
+        color: gary;
+        line-height: 32px;
+        height: 32px;
+        width: 32px;
+        border: 1px solid #fff;
+        @include inline-block;
+        text-align: center;
+        vertical-align: middle;
+        @include border-radius(3px);
+        background: #fff;
+        font-size: 14px;
+        &.curr {
+            background: $cf-font-red;
+            border: 1px solid $cf-font-red;
+            color: #fff;
         }
     }
 }
