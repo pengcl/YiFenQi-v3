@@ -430,6 +430,7 @@
         padding-bottom: 12px;
         padding-left: 22px;
         padding-right: 22px;
+        @include box-sizing(content-box);
         .continue-info {
             .save-address {
                 position: relative;
