@@ -71,3 +71,61 @@
 #productDetailTabs {
     margin-left: 15px;
 }
+
+#i-number {
+    .tips {
+        padding: 10px;
+    }
+    table {
+        width: 100%;
+        border: 0;
+        td {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border: 0;
+            div {
+                padding: 10px;
+                border-width: 2px;
+                border-style: solid;
+                border-color: #fff;
+                position: relative;
+                ins {
+                    position: absolute;
+                    display: none;
+                    right: 0;
+                    bottom: 0;
+                    background: url("../images/selectbg.png") no-repeat;
+                    width: 16px;
+                    height: 12px;
+                }
+                &.curr {
+                    border-color: $cf-border-red;
+                    ins {
+                        display: block;
+                    }
+                }
+            }
+            span {
+                display: block;
+                font-size: 18px;
+            }
+            del {
+                display: block;
+            }
+        }
+    }
+}
+
+.num-finder {
+    label, span {
+        @include inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+        &.curr {
+            background: $cf-border-red;
+            color: #fff;
+        }
+    }
+}

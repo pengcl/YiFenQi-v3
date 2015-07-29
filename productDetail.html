@@ -166,7 +166,7 @@
                                     <dl class="i-number clearfix">
                                         <dt>选择靓号：</dt>
                                         <dd>
-                                            <button class="pure-button">选择号码</button>
+                                            <button class="pure-button" data-toggle="modal" data-target="#i-number">选择号码</button>
                                         </dd>
                                     </dl>
                                 </div>
@@ -841,6 +841,140 @@
     <script>
         $.get("include/footer.html", function (data) {
             $(".footer").html(data);
+        });
+    </script>
+    <div id="i-number" class="modal fade bs-example-modal-lg">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">选择靓号</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="num-finder pdv">
+                        <label>选择号段：</label><span class="curr">不限</span><span>133</span><span>153</span><span>180</span><span>181</span><span>189</span>
+                    </div>
+                    <p class="tips"><a href="javascript:;">请在选号后一小时内提交订单，不然心仪的号码可能会被抢走哦。</a>
+                    </p>
+                    <table class="pure-table">
+                        <tr>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                            <td>
+                                <div><span>15013262507</span><del>预存200元</del><ins></ins>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="bottom_page pdm mgv">
+                        <a class="curr" href="javascript:;">1</a>
+                        <a href="javascript:;">2</a>
+                        <a href="javascript:;">3</a>
+                    </div>
+                    <div class="tips pdm">
+                        注：<span>① 以上号码由中国电信广州分公司提供，皆为广州地区号码。</span><span>② 您选择的号码全国接听免费，语音呼出资费全国统一。
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="pure-button btn-default" data-dismiss="modal">取消</button>
+                    <button type="button" class="pure-button btn-primary" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <script>
+        $("#i-number table").find("div").click(function () {
+            $("#i-number table").find("div").removeClass("curr");
+            var sDiv = $(this);
+            sDiv.addClass("curr");
+        });
+        $(".num-finder").find("span").click(function () {
+            $(".num-finder").find("span").removeClass("curr");
+            $(this).addClass("curr");
         });
     </script>
 </body>
