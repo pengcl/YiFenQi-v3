@@ -47,6 +47,20 @@
             </div>
         </div>
     </div>
+    <script>
+        $(".banner-top .slide .carousel").jCarouselLite({
+        btnNext: ".banner-top .slide .next",
+        btnPrev: ".banner-top .slide .prev",
+        start: 0,
+        visible: 1,
+        auto: 5000,
+        speed: 1500,
+        btnGo: [".banner-top .btn-go .1", ".banner-top .btn-go .2"],
+        afterEnd: function (a) {
+
+        }
+    });
+    </script>
     <div class="main">
         <script src="js/countdown.js" type="text/javascript"></script>
         <div class="special-selling">
