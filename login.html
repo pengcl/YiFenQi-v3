@@ -30,19 +30,39 @@
         <div class="container">
             <div class="login mgt box border-top-radius">
                 <div class="inset-row">
-                    <h1 class="fst fwl pvs oln grid-9of10" id="page-header" tabindex="-1">您的购物车中的商品</h1>
+                    <h1 class="" id="page-header" tabindex="-1">请登陆</h1>
                 </div>
                 <div class="login-panel pure-g">
-
+                    <div class="pure-u-1-2"></div>
+                    <div class="pure-u-1-2">
+                        <form action="" id="sign-in-form" class="sign-in">
+                            <h2>输入您的用户名和密码</h2>
+                            <div class="inputs">
+                                <div class="field-with-placeholder">
+                                    <label class="placeholder">用户名：</label>
+                                    <input type="text" name="username" required="required">
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <div class="field-with-placeholder">
+                                    <label class="placeholder">密&nbsp;&nbsp;&nbsp;码：</label>
+                                    <input type="text" name="password" required="required">
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <button id="sign-in" class="pure-button button-blue" type="submit">登录</button>
+                                <a class="" href="javascript:;">忘记密码？</a> <span>|</span> <span>还没有帐号？</span><a href="javascript:;">立即注册</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="box-footer box border-bottom-radius">
                 <div style="display:block;" class="box-content pure-g">
-                    <div class="box-info pure-u-3-4"></div>
+                    <div class="box-info pure-u-3-4"><div class="tips">如果您有问题， 欢迎随时提问。 <i class="fa fa-phone"></i> 020-8559 9918</div>
+</div>
                     <div class="box-button pure-u-1-4">
-                        <button type="button" class="pure-button button-continue" title="立即下订单">
-                            <span id="coherent_id_723"><span id="coherent_id_724" class="label">结账</span></span>
-                        </button>
+                        <button type="button" class="pure-button button-continue" title="以访客身份继续">以访客身份继续</button>
                     </div>
                 </div>
             </div>

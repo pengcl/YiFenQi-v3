@@ -1,5 +1,11 @@
 .login {
     margin-top: 15px;
+    .inset-row {
+        margin-bottom: 15px;
+        h1 {
+            border-bottom: 1px solid #e6e6e6;
+        }
+    }
 }
 
 .box-footer {
@@ -14,6 +20,63 @@
             margin-bottom: 15px;
             margin-right: 24px;
             margin-top: 15px;
+        }
+    }
+}
+#sign-in-form {
+    padding-top: 74px;
+    padding-left: 57px;
+    margin-right: 66px;
+    min-height: 327px;
+    background: url("../images/bg-signin-divider.png") top left no-repeat;
+    h2 {
+        padding-bottom: 18px;
+        font-size: 18px;
+    }
+    .inputs {
+        margin-bottom: 15px;
+        input {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            height: 21px;
+        }
+        label {
+            padding-top: 10px;
+        }
+    }
+    .actions {
+        color: #666;
+        button {
+            font-size: 14px;
+            margin-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        a {
+            color: blue;
+            text-decoration: underline;
+            @include inline-block;
+            vertical-align: middle;
+        }
+        span {
+            vertical-align: middle;
+        }
+    }
+}
+.box-footer {
+    .box-info {
+        .tips {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 24px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            font-size: 14px;
+            color: #666;
+            i {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
         }
     }
 }
