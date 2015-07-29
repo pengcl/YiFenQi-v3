@@ -31,11 +31,11 @@ $(function () {
 $(document).ajaxStop(function () {
     "use strict";
     var i;
-    $(".qrcode").mouseover(function(){
-        $(".tooltip-qrcode").css("display","block");
+    $(".qrcode").mouseover(function () {
+        $(".tooltip-qrcode").css("display", "block");
     });
-    $(".qrcode").mouseout(function(){
-        $(".tooltip-qrcode").css("display","none");
+    $(".qrcode").mouseout(function () {
+        $(".tooltip-qrcode").css("display", "none");
     });
     //商品分类菜单显示隐藏
     $(".menu-name a").click(function () {
@@ -91,7 +91,7 @@ $(document).ready(function () {
             scrollTop: $(obj).offset().top
         }, time);
     }
-    var sc, productTxtTop;
+    var sc, productTxtTop, step_index;
     sc = $(document);
     productTxtTop = $(".product-txt").outerHeight() - 286;
 
@@ -169,7 +169,7 @@ $(document).ready(function () {
     //订单继续功能
     $(".checkout-step > ol > li").eq(0).find(".step-content").css("display", "block");
     $(".checkout-step > ol > li").eq(0).find(".step-continue").css("display", "block");
-    var step_index = 0;
+    step_index = 0;
     $(".checkout-step .shipping-edit-button").click(function () {
         var parentObj, fstContentObj, stepContinueObj, stepSummaryObj, inputLength, i;
         parentObj = $(this).parent().parent();
@@ -180,7 +180,7 @@ $(document).ready(function () {
         stepContinueObj.css("display", "block");
         fstContentObj.fadeIn(500);
         parentObj.find("legend").css("display", "block");
-        stepSummaryObj.css("display","none");
+        stepSummaryObj.css("display", "none");
         parentObj.find(".button-gray").css("display", "block");
         stepContinueObj.slideDown(500);
         parentObj.find(".step-header").removeClass("greyed-out");
@@ -203,13 +203,13 @@ $(document).ready(function () {
         parentObj = $(this).parent().parent().parent().parent().parent();
         if (parentObj.index() >= step_index) {
             step_index = parentObj.index();
-        } else {}
+        }
         fstContentObj = parentObj.find(".fieldset-content");
         stepContinueObj = parentObj.find(".step-continue");
         stepSummaryObj = parentObj.find(".step-summary");
         parentObj.find(".shipping-edit-button").fadeIn(500);
         stepContinueObj.css("display", "none");
-        fstContentObj.css("display","none");
+        fstContentObj.css("display", "none");
         parentObj.find("legend").css("display", "none");
         stepSummaryObj.fadeIn("500");
         //fstContentObj.children("input").length;
