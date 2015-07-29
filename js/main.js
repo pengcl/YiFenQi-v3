@@ -31,6 +31,12 @@ $(function () {
 $(document).ajaxStop(function () {
     "use strict";
     var i;
+    $(".qrcode").mouseover(function(){
+        $(".tooltip-qrcode").css("display","block");
+    });
+    $(".qrcode").mouseout(function(){
+        $(".tooltip-qrcode").css("display","none");
+    });
     //商品分类菜单显示隐藏
     $(".menu-name a").click(function () {
         $(".menu .menu-list").toggle();

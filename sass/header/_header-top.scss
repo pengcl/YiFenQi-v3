@@ -3,6 +3,30 @@
     li {
         display: block;
         float: left;
+        &.qrcode {
+            position: relative;
+            z-index: 4;
+            .tooltip-qrcode {
+                position: absolute;
+                top: 30px;
+                left: 0;
+                display: none;
+                .tooltip-inner {
+                    padding: 8px;
+                    background: #fff;
+                }
+                .tooltip-arrow {
+                    border-bottom-color: #fff;
+                }
+                .qrcode-img {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        display: block;
+                    }
+                }
+            }
+        }
         &.spr {
             a {
                 padding-left: 0;
