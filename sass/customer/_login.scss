@@ -80,3 +80,46 @@
         }
     }
 }
+.register {
+    #sign-in-form {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        .inputs {
+            .field-with-placeholder {
+                label {
+                    position: static;
+                    width: 120px;
+                    text-align: right;
+                    @include inline-block;
+                }
+                input {
+                    padding-left: 10px;
+                }
+                .protocol {
+                    position: relative;
+                    @include inline-block;
+                    padding-left: 20px;
+                    input {
+                        padding: 0;
+                        margin: 0;
+                        width: auto;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .actions {
+            padding-left: 136px;
+        }
+    }
+    .inset-row {
+        margin-bottom: 15px;
+        h1 {
+            border-bottom: 1px solid #e6e6e6;
+        }
+    }
+    &.mgt {
+        margin-top: 15px;
+    }
+}

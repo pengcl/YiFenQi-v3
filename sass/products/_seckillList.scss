@@ -1,0 +1,16 @@
+.seckill-banner {
+    min-width: 1200px;
+    min-height: 171px;
+    overflow: hidden;
+    background: #fc4d6e url("../../images/limittime.jpg") top center no-repeat;
+}
+.left-time {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    font-size: 18px;
+    background: #fff;
+    .container {
+        width: 1100px;
+    }
+}
