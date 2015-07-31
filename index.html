@@ -14,6 +14,7 @@
 <![endif]-->
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="js/jquery.jcarousellite.min.js" type="text/javascript"></script>
+    <script src="js/jquery.SuperSlide.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 </head>
 
@@ -32,9 +33,9 @@
             <div class="slide">
                 <div class="carousel">
                     <ul>
-                        <li><img data-color="#c7cffb" src="images/banner-1.jpg">
+                        <li><img data-bg="#c7cffb" src="images/banner-1.jpg">
                         </li>
-                        <li><img data-color="#f2f2f2" src="images/banner-2.jpg">
+                        <li><img data-bg="#f2f2f2" src="images/banner-2.jpg">
                         </li>
                     </ul>
                     <div class="btn-pn">
@@ -48,18 +49,12 @@
         </div>
     </div>
     <script>
-        $(".banner-top .slide .carousel").jCarouselLite({
-        btnNext: ".banner-top .slide .next",
-        btnPrev: ".banner-top .slide .prev",
-        start: 0,
-        visible: 1,
-        auto: 5000,
-        speed: 1500,
-        btnGo: [".banner-top .btn-go .1", ".banner-top .btn-go .2"],
-        afterEnd: function (a) {
-
+        var i;
+        for (i = 0; i < $(".banner-top .carousel ul li img").length; i++) {
+            $(".banner-top .carousel ul li img").eq(i).parent().css("background", $(".banner-top .carousel ul li img").eq(i).attr("data-bg"));
+            //$(".carousel ul li img").parent().css("background-color", $(".carousel ul li img").attr("data-color"));
         }
-    });
+        $(".banner-top").find(".carousel").slide({ titCell:".btn-go", mainCell:"ul", effect:"fold",  autoPlay:true, autoPage:true, trigger:"click" });
     </script>
     <div class="main">
         <script src="js/countdown.js" type="text/javascript"></script>

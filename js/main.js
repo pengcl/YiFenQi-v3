@@ -1,18 +1,5 @@
 $(function () {
     "use strict";
-    //首页主广告滚动轮播
-    $(".banner-top .slide .carousel").jCarouselLite({
-        btnNext: ".banner-top .slide .next",
-        btnPrev: ".banner-top .slide .prev",
-        start: 0,
-        visible: 1,
-        auto: 5000,
-        speed: 1500,
-        btnGo: [".banner-top .btn-go .1", ".banner-top .btn-go .2"],
-        afterEnd: function (a) {
-
-        }
-    });
 
     //产品页，产品图片滚动轮播
     $("#product-image-list .scroller").jCarouselLite({
@@ -45,11 +32,6 @@ $(document).ajaxStop(function () {
     $(".header .shoppingcart").click(function () {
         $(".header .shoppingcart-box").toggle();
     });
-    //获取图片背景
-    for (i = 0; i < $(".banner-top .carousel ul li img").length; i++) {
-        $(".banner-top .carousel ul li img").eq(i).parent().css("background-color", $(".banner-top .carousel ul li img").eq(i).attr("data-color"));
-        //$(".carousel ul li img").parent().css("background-color", $(".carousel ul li img").attr("data-color"));
-    }
 
     //菜单下划线动画
     $(".nav-list ul li").mouseover(function () {
