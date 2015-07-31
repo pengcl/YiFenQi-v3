@@ -4,6 +4,7 @@
     overflow: hidden;
     background: #fc4d6e url("../../images/limittime.jpg") top center no-repeat;
 }
+
 .left-time {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -14,9 +15,11 @@
         width: 1100px;
     }
 }
-.seckill-list{
+
+.seckill-list {
     .seckill-item {
         padding: 20px;
+        @include border-radius(4px);
         @at-root .seckill-img {
             .img-box {
                 background: #f5f5f5;
@@ -33,19 +36,19 @@
                 font-size: 18px;
             }
             .hr {
-                margin-top: 15px;
-                margin-bottom: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
                 margin-left: 35px;
             }
             .title {
                 font-size: 22px;
                 margin-left: 35px;
-                margin-top: 15px;
-                margin-bottom: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
             .details {
-                margin-top: 15px;
-                margin-bottom: 15px;
+                margin-top: 20px;
+                margin-bottom: 20px;
                 margin-left: 35px;
                 font-size: 14px;
                 line-height: 25px;
@@ -57,6 +60,54 @@
                 margin-right: -20px;
                 line-height: 62px;
                 color: #fff;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .price {
+                margin-left: 35px;
+                margin-top: 20px;
+                margin-bottom: 0;
+                height: 40px;
+                line-height: 20px;
+                label {
+                    line-height: 24px;
+                    height: 20px;
+                    display: block;
+                    font-size: 14px;
+                }
+                .num {
+                    line-height: 24px;
+                    height: 20px;
+                    font-size: 14px;
+                }
+                .buyed {
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 14px;
+                    i {
+                        color: $cf-font-red;
+                        font-size: 18px;
+                        margin-right: 10px;
+                    }
+                    em {
+                        text-decoration: none;
+                        color: $cf-font-red;
+                        font-size: 18px;
+                        font-style: normal;
+                    }
+                }
+                .yi-price {
+                    .price-now {
+                        border-right: 1px solid #e6e6e6;
+                        margin-right: 20px;
+                    }
+                }
+                .maket-price {
+                    .price-market {
+                        border-right: 1px solid #e6e6e6;
+                        margin-right: 20px;
+                    }
+                }
             }
             .cut-price {
                 text-align: right;
