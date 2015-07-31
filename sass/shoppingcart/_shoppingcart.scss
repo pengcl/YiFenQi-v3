@@ -86,7 +86,9 @@
 }
 
 .shopping-cart {
-    margin-top: 15px;
+    &.box {
+        margin-top: 15px;
+    }
     @at-root .inset-row {
         padding-left: 13px;
         padding-right: 14px;
