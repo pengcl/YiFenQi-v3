@@ -1,0 +1,40 @@
+.promise {
+    .promise-img {
+        height: 48px;
+        background: url("../images/promise.png") no-repeat;
+    }
+}
+
+.lux-watch {
+    overflow: hidden;
+    .title {
+        height: 50px;
+        background: url("../images/lux-watch.png") no-repeat;
+    }
+    .product-list {
+        height: 450px;
+        position: relative;
+        .list-items {
+            width: 354px;
+            position: absolute;
+            &.item-1 {
+                left: 0;
+                top: 0;
+            }
+            &.item-2 {
+                left: 374px;
+                top: 0;
+            }
+            &.item-3 {
+                left: 746px;
+                top: 0;
+                height: 215px;
+            }
+            &.item-4 {
+                left: 746px;
+                bottom: 0;
+                height: 215px;
+            }
+        }
+    }
+}
