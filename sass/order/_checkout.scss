@@ -194,6 +194,7 @@
                             padding-right: 0;
                             margin-bottom: 0;
                             @at-root .card-option {
+                                @include box-sizing(content-box);
                                 @include inline-block;
                                 height: 24px;
                                 line-height: 24px;

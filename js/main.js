@@ -166,18 +166,11 @@ $(document).ready(function () {
         parentObj.find(".button-gray").css("display", "block");
         stepContinueObj.slideDown(500);
         parentObj.find(".step-header").removeClass("greyed-out");
-        if (parentObj.index() === 5) {
-            $(".order-footer-content").css("display", "block");
+        setTimeout(function () {
             $("html,body").animate({
-                scrollTop: $(".cart").offset().top
+                scrollTop: parentObj.offset().top
             }, 500, 'swing');
-        } else {
-            setTimeout(function () {
-                $("html,body").animate({
-                    scrollTop: parentObj.offset().top
-                }, 500, 'swing');
-            }, 500);
-        }
+        }, 500);
     });
 
     $(".checkout-step .button-continue").click(function () {
